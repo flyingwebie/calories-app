@@ -1,0 +1,14 @@
+{
+  "name": "calorie-app",
+  "version": "1.0.0",
+  "description": "This's a simple app to calculate the Total Calories for every meal. This app is created by Traversy Media JavaScript Course on Udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calories"
+  ],
+  "author": "Davide Del Gatto",
+  "license": "MIT"
+}
