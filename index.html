@@ -17,6 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.2/sweetalert2.min.css"
+      integrity="sha512-y4S4cBeErz9ykN3iwUC4kmP/Ca+zd8n8FDzlVbq5Nr73gn1VBXZhpriQ7avR+8fQLpyq4izWm0b8s6q4Vedb9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -41,24 +48,35 @@
             <div class="card-title">Add Meal / Food Item</div>
             <form class="col">
               <div class="row">
-                <div class="input-filed col s6">
+                <div class="input-filed col s4">
                   <label for="item-name">Meal</label>
                   <input type="text" placeholder="Add Item" id="item-name" />
                 </div>
-                <div class="input-filed col s6">
+                <div class="input-filed col s4">
                   <label for="item-calories">Calories</label>
                   <input
-                    type="text"
+                    type="number"
                     placeholder="Add Calories"
                     id="item-calories"
                   />
                 </div>
+                <div class="input-field col s4">
+                  <label for="item-date">Date</label>
+                  <input
+                    type="text"
+                    class="datepicker"
+                    placeholder="dd/mm/yyyy"
+                    id="item-date"
+                  />
+                </div>
+              </div>
+              <div class="row">
                 <button
                   class="add-btn btn green darken-4 waves-effect waves-light"
                 >
                   <i class="fas fa-plus"></i> Add Meal
                 </button>
-                <!-- <button
+                <button
                   class="update-btn btn orange darken-4 waves-effect waves-light"
                 >
                   <i class="fas fa-pencil-square-o"></i> Update Meal
@@ -67,7 +85,7 @@
                   class="delete-btn btn red darken-4 waves-effect waves-light"
                 >
                   <i class="fas fa-remove"></i> Delete Meal
-                </button> -->
+                </button>
                 <button
                   class="back-btn btn blue-grey light-4 waves-effect waves-light right"
                 >
@@ -114,6 +132,12 @@
     ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.2/sweetalert2.min.js"
+      integrity="sha512-PrOveGpGKG+7DGnHksdrWccFB/WZ956oNKl/LGmwsF90j2ILSrJ9Sik7pH+qepL4oNwMhvU5ZyVSrpRldyIkYg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
